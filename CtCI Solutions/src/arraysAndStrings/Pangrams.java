@@ -3,7 +3,6 @@ import java.util.*;
 public class Pangrams {
 	public static void main(String [] args){
 		Set<Character> alphabet = new HashSet<>();
-		
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Please enter a string of text:");
 		String sentence = reader.nextLine();
@@ -19,6 +18,11 @@ public class Pangrams {
 			}
 		}
 		
+		PrintResult(alphabet);
+		reader.close();
+	}
+	
+	public static void PrintResult(Set<Character> alphabet){
 		if(alphabet.isEmpty()){
 			System.out.println("Sentence is a pangram!");
 		}
@@ -29,6 +33,5 @@ public class Pangrams {
 			}
 		}
 	}
-	
 	
 }

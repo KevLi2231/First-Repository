@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Implement an algorithm to determine if a string has all unique characters. 
  * What if you cannot use additional data structures?
- * @author li223
+ * @author Kevin Li
  *
  */
 public class OneptOne {
@@ -19,6 +19,7 @@ public class OneptOne {
 			System.out.println("This sentence contains duplicate characters.");
 		}
 		
+		reader.close();
 	}
 	
 	public static boolean isUniqueChars(String sentence){
